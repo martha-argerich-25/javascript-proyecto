@@ -1,8 +1,16 @@
 .footer{
     background-color: rgba(39, 64, 188, 0.907);
+    height: 100px;
 }
 .texto-footer{
     color: aliceblue;
     text-align: center;
     margin-top: 30px;
+}
+.iconify{
+    display: flex;
+    justify-content:center;
+    width: 90px;
+    height: 40px;
+    
 }
