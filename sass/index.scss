@@ -1,0 +1,18 @@
+/*misc*/
+
+@import './misc/variables';
+@import './misc/normalize';
+
+
+/*partials*/
+@import './partials/header';
+@import './partials/footer';
+
+/*views*/
+@import './views/home';
+@import './views/qchat';
+@import './views/queeselfenotipoampliado';
+
+
+/* mediaqueries*/
+@import './misc/mediaqueries';

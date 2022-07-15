@@ -1,0 +1,26 @@
+
+
+
+
+h1{
+    color: rgb(219, 21, 21);
+}
+
+.btn-outline-success{
+    --bs-btn-color: #fdfdfdfb;
+    --bs-btn-border-color: #f81b0c80;
+    --bs-btn-hover-color: rgb(246, 10, 10);
+    --bs-btn-hover-bg: #f70a0ae9;
+    --bs-btn-hover-border-color: #ff0606ea;
+background-color: red;}
+
+.navbar{
+
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+--bs-navbar-active-color: rgba(16, 29, 167, 0.9);
+--bs-navbar-brand-padding-y: 0.3125rem;
+--bs-navbar-brand-margin-end: 1rem;
+--bs-navbar-brand-font-size: 1.25rem;
+--bs-navbar-brand-color: rgba(15, 38, 171, 0.9);
+font-weight: bold;
+}

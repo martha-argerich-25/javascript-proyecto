@@ -1,0 +1,115 @@
+/*misc*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 80.5%; }
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold; }
+
+body {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium; }
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center; }
+
+h3 {
+  color: #0e098f;
+  font-weight: bold; }
+
+/*partials*/
+h1 {
+  color: #db1515; }
+
+.btn-outline-success {
+  --bs-btn-color: #fdfdfdfb;
+  --bs-btn-border-color: #f81b0c80;
+  --bs-btn-hover-color: rgb(246, 10, 10);
+  --bs-btn-hover-bg: #f70a0ae9;
+  --bs-btn-hover-border-color: #ff0606ea;
+  background-color: red; }
+
+.navbar {
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgba(16, 29, 167, 0.9);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(15, 38, 171, 0.9);
+  font-weight: bold; }
+
+.footer {
+  background-color: rgba(39, 64, 188, 0.907); }
+
+.texto-footer {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 30px; }
+
+/*views*/
+.titulo-principal {
+  text-align: center;
+  color: black; }
+
+.articulo-home {
+  padding-bottom: 25px; }
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../img/charlein-gracia-dDrQPSbYQRk-unsplash.jpg);
+  background-size: cover;
+  height: 500px;
+  margin-top: 10px;
+  padding-top: 50px; }
+  .box .box1 {
+    background-color: rgba(192, 214, 226, 0.729);
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+  .box .box2 {
+    background-color: rgba(192, 214, 226, 0.729);
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+  .box .box3 {
+    background-color: rgba(192, 214, 226, 0.729);
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+
+.subtitulo {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid; }
+
+.div-qchat {
+  display: flex;
+  background-color: rgba(192, 214, 226, 0.729);
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px; }
+  .div-qchat .titulo-qchat {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold; }
+
+/* mediaqueries*/
