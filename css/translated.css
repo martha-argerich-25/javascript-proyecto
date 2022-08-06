@@ -87,31 +87,26 @@ h1 {
   margin-top: 10px;
   padding-top: 50px; }
   .box .box1 {
-    background-color: rgba(192, 214, 226, 0.729);
+    background-color: rgba(163, 162, 138, 0.694);
     width: 300px;
     height: 300px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px; }
   .box .box2 {
-    background-color: rgba(192, 214, 226, 0.729);
+    background-color: rgba(163, 162, 138, 0.694);
     width: 300px;
     height: 300px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px; }
   .box .box3 {
-    background-color: rgba(192, 214, 226, 0.729);
+    background-color: rgba(163, 162, 138, 0.694);
     width: 300px;
     height: 300px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px; }
-
-.subtitulo {
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-style: solid; }
 
 .div-qchat {
   display: flex;
@@ -126,6 +121,39 @@ h1 {
     font-size: 25px;
     font-weight: bold; }
 
+.box-fenotipo {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../img/photo-1611708314849-8bb91fe0fa56.webp);
+  background-size: cover;
+  height: 500px;
+  margin-top: 10px;
+  padding-top: 50px; }
+  .box-fenotipo .box1-fenotipo {
+    background-color: rgba(192, 214, 226, 0.729);
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+  .box-fenotipo .box2-fenotipo {
+    background-color: rgba(192, 214, 226, 0.729);
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+  .box-fenotipo .box3-fenotipo {
+    background-color: rgba(192, 214, 226, 0.729);
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+
+.articulo {
+  padding-top: 20px; }
+
 .articulo-fenotipo {
   display: flex;
   background-color: rgba(127, 169, 206, 0.428); }
@@ -139,3 +167,7 @@ h1 {
   padding-top: 50px; }
 
 /* mediaqueries*/
+@media screen and (max-width: 320px) {
+  .box {
+    display: block;
+    background-image: none; } }
