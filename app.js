@@ -431,6 +431,18 @@ const preguntas = [
     
     ]
     
+function mostrarTest (){
+
+    const preguntasYrespuestas =  [];
+
+    preguntas.forEach((preguntaactual,numerodepregunta)=>{
+const respuestas = [];
+for (letrarespuesta in preguntaactual.respuesta){
+    
+}
+    })
+
+}
     
     
     
