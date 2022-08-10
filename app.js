@@ -513,6 +513,14 @@ const preguntas = [
  //deberia hacer primero la funcion suma de las respuestas , como accedo a la respuesta que esta dentro de un objeto dentro de otro objeto para hace esa funcion?
 
  // luego tal vez hacer un for each para que busque las respuestas marcadas por el usuario y de acuerdo a esas respuestas establecer los condicionales?
+
+ //1) crear una funcion suma de respuestas
+ //2) usar foreach para que recorra el array y los objetos y vea las respuestas
+ //3) usar esas respuestas y aplicar la funcion suma?
+ //4) establecer los condicionales if else if  de acuerdo al total de respuestas
+//5) mostrar el resultado
+
+//el problema es q ue no se como hacerlo...
     
    
 
