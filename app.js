@@ -1,5 +1,8 @@
 // Q chat//
 //ARRAY  con objetos dentro de objetos - PREGUNTAS Y RESPUESTAS//
+//se le añadio un ID para poder identificarlas preguntas//
+
+//cada pregunta tiene 5 opciones ,cada opcion tiene un puntaje//
 
 const preguntas = [
 
@@ -13,11 +16,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },{id:2,
         pregunta : "2. ¿Cuán fácil le resulta establecer contacto visual con su hijo/a?",
@@ -29,11 +32,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:3,
@@ -46,11 +49,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -64,11 +67,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     {id:5,
@@ -81,11 +84,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     {id:6,
@@ -98,11 +101,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:7,
@@ -115,11 +118,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -133,11 +136,11 @@ const preguntas = [
             e :"más de 100 palabras"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -151,11 +154,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     {id:10,
@@ -168,11 +171,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:11,
@@ -185,11 +188,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -204,11 +207,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta: 4,
+    respuesta:3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -222,11 +225,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -241,11 +244,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     {id:15,
@@ -258,11 +261,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:16,
@@ -275,11 +278,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -293,11 +296,11 @@ const preguntas = [
             e :"no habla"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:18,
@@ -310,11 +313,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -328,11 +331,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:20,
@@ -345,11 +348,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -363,11 +366,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 0,
-    respuestab :1,
-    respuestac:2,
-    respuestad:3,
-    respuestae:4
+    respuesta : 0,
+    respuesta :1,
+    respuesta:2,
+    respuesta:3,
+    respuesta:4
     
     },
     { id:22,
@@ -380,11 +383,11 @@ const preguntas = [
             e :"un par de minutos"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -398,11 +401,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -416,11 +419,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa: 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta: 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
@@ -434,16 +437,19 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuestaa : 4,
-    respuestab :3,
-    respuestac:2,
-    respuestad:1,
-    respuestae:0
+    respuesta : 4,
+    respuesta :3,
+    respuesta:2,
+    respuesta:1,
+    respuesta:0
     
     
     } ,
     
     ]
+    //SE APLICO METODO PUSH PARA AGREGAR UNA ULTIMA PREGUNTA//
+    preguntas.push ({pregunta:"¿Alguna vez Ud u otra persona han referido algún tipo de preocupación por el desarrollo de su hijo/a?"})
+
    //METODO DE BUSQUEDA DE PREGUNTAS PRACTICAR FOREACH//
    preguntas.forEach(preguntas => {console.log(preguntas)
         
@@ -455,7 +461,9 @@ const preguntas = [
     let edad = parseInt (prompt("ingrese la edad de su hijo en años"))
 
     alert("el nombre y apellido ingresado es  "+nombre+" "+ apellido+ " y su edad es"+" "+edad +" "+"años")
+
     // se le indica al usuario a colocar la palabra cuestionario para obtener la lista de preguntas//
+    
     let cuestionario = prompt ("escriba la palabra cuestionario para solicitar las preguntas")
     if (cuestionario == "cuestionario"){
 
@@ -468,7 +476,7 @@ const preguntas = [
         alert("no coloco la palabra correcta")
     }
 
-    // se le solicita responder las pregunta y colocar un numero segun la frecuencia (solo de 7 preguntas)//
+    // se le solicita responder algunas de las pregunta y colocar un numero segun la frecuencia (solo de 7 preguntas)//
 
     let pregunta1 = parseInt (prompt( "1. ¿La/Lo mira su hijo/a cuando Ud. dice su nombre siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
 
@@ -492,12 +500,21 @@ const preguntas = [
 
      // EL TEST ORIGINAL TIENE 25 PREGUNTAS Y LOS PUNTOS DE CORTE SON 44 , ES DECIR MAYOR A O MENOR A 44 PUNTOS//
 
-// condicionales para el ejericio//
+// condicionales para la pre-entrega//
      if (total <=10){
          alert (" no esta dentro del espectro")
      }else if (total >10){
          alert ( " esta dentro del espectro autista")
      }
     
-   
+ //DUDAS//
+ // como puedo hacer para que el usuario al marcar una opcion , esa opcion que tiene un numero como respuesta luego sea sumado y ahi se pueda establacer los condicionales de acuerdo al resultado??
+
+ //deberia hacer primero la funcion suma de las respuestas , como accedo a la respuesta que esta dentro de un objeto dentro de otro objeto para hace esa funcion?
+
+ // luego tal vez hacer un for each para que busque las respuestas marcadas por el usuario y de acuerdo a esas respuestas establecer los condicionales?
     
+   
+
+   
+   
