@@ -446,9 +446,35 @@ const preguntas = [
     
     } ,
     
-    ]
+    ];
+
+
     //SE APLICO METODO PUSH PARA AGREGAR UNA ULTIMA PREGUNTA//
     preguntas.push ({pregunta:"¿Alguna vez Ud u otra persona han referido algún tipo de preocupación por el desarrollo de su hijo/a?"})
+//POSIBLE LOGICA//
+
+function mostrarRespuesta(){
+
+    const preguntasYrespuestas = [];
+
+    preguntas.forEach((preguntaActual,numeroDePregunta)=>{
+    const respuestas = [];
+    for(letraRespuesta in preguntaActual.respuesta){
+        respuestas.push(
+            
+
+        );
+    }
+
+
+    }
+    
+  )
+}
+
+
+
+
 
    //METODO DE BUSQUEDA DE PREGUNTAS PRACTICAR FOREACH//
    preguntas.forEach(preguntas => {console.log(preguntas)
@@ -505,6 +531,7 @@ const preguntas = [
          alert (" no esta dentro del espectro")
      }else if (total >10){
          alert ( " esta dentro del espectro autista")
+
      }
     
  //DUDAS//
@@ -521,8 +548,8 @@ const preguntas = [
 //5) mostrar el resultado
 
 //el problema es q ue no se como hacerlo...
-    
-   
 
+
+   
    
    
