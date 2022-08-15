@@ -1,5 +1,4 @@
 const contenedor = document.getElementById("test");
-
 const botonRes = document.getElementById ("boton");
 const resultadotest = document.getElementById ("resultado");
 
@@ -92,14 +91,15 @@ function mostrarTest (){
      preguntas.forEach ((preguntaActual,TotalDePreguntas)=> {
          const respuestas = [];
 
-         for(letraRespuesta in preguntaActual.respuestas){
+         for(LetraRespuesta in preguntaActual.respuestas){
              respuestas.push(
 `<label> 
-<input type ="radio" name ="${TotalDePreguntas}" value ="${letraRespuesta}"/>
-${letraRespuesta} :${preguntaActual.respuestas[letraRespuesta]}
+<input type ="radio" name ="${TotalDePreguntas}" value ="${LetraRespuesta}"/>
+${LetraRespuesta} :${preguntaActual.respuestas[LetraRespuesta]}
 
 </label>`
              );
+
          }
         preguntasYrespuestas.push(
             `<div class="cuestion"> ${preguntaActual.pregunta}</div>
@@ -107,10 +107,18 @@ ${letraRespuesta} :${preguntaActual.respuestas[letraRespuesta]}
             `
         );
      });
+
+     //------------------------------------//
      contenedor.innerHTML = preguntasYrespuestas.join("");
 }
 
 mostrarTest();
+
+
+
+
+
+
 
 // FUNCION DE LAS RESPUESTAS y comprobar los resultados finales//
 

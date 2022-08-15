@@ -4,7 +4,14 @@
 
 //cada pregunta tiene 5 opciones ,cada opcion tiene un puntaje//
 
-const preguntas = [
+
+const Qchat = document.getElementById("qchat");
+const botonQ = document.getElementById("boton1");
+const resultadoqchat = document.getElementById ("resultadofinal");
+
+
+
+const preguntaschat = [
 
     {id:1,
         pregunta : "1. ¿La/Lo mira su hijo/a cuando Ud. dice su nombre?",
@@ -13,14 +20,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },{id:2,
         pregunta : "2. ¿Cuán fácil le resulta establecer contacto visual con su hijo/a?",
@@ -29,14 +36,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },
     { id:3,
@@ -46,14 +53,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0
     
     
     } ,
@@ -64,14 +71,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4
     
     },
     {id:5,
@@ -84,11 +91,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4
     
     },
     {id:6,
@@ -101,11 +108,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4
     
     },
     { id:7,
@@ -118,11 +125,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0
     
     
     } ,
@@ -133,14 +140,14 @@ const preguntas = [
             b : "menos de 10 palabras",
             c: " 10-50 palabras",
             d : "51-100 palabras",
-            e :"más de 100 palabras"
+            e :"más de 100 palabras",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0
     
     
     } ,
@@ -151,31 +158,31 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4
     
     },
     {id:10,
-        pregunta : "10. ¿Su hijo/a mira hacia dónde Ud está mirando?",
+        pregunta: "10. ¿Su hijo/a mira hacia dónde Ud está mirando?",
         respuesta : {
             a : "siempre",
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4
     
     },
     { id:11,
@@ -185,14 +192,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -204,14 +211,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta: 4,
-    respuesta:3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ: 4,
+    respuestaQ:3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -222,33 +229,33 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
     {
         id:14,
-        pregunta : "14. ¿Cuán fácil le resulta a su hijo/a adaptarse cuando su rutina cambia o cuando las cosas están fuera del lugar habitual?",
+        pregunta: "14. ¿Cuán fácil le resulta a su hijo/a adaptarse cuando su rutina cambia o cuando las cosas están fuera del lugar habitual?",
         respuesta : {
             a : "siempre",
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },
     {id:15,
@@ -258,14 +265,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },
     { id:16,
@@ -275,14 +282,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -293,14 +300,14 @@ const preguntas = [
             b : "bastante tipicas",
             c: "levemente inusuales",
             d : "muy inusuales",
-            e :"no habla"
+            e :"no habla",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },
     { id:18,
@@ -310,14 +317,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -328,14 +335,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },
     { id:20,
@@ -345,14 +352,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -363,14 +370,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 0,
-    respuesta :1,
-    respuesta:2,
-    respuesta:3,
-    respuesta:4
+    respuestaQ : 0,
+    respuestaQ :1,
+    respuestaQ:2,
+    respuestaQ:3,
+    respuestaQ:4,
     
     },
     { id:22,
@@ -380,14 +387,14 @@ const preguntas = [
             b : "varias horas",
             c: "media hora",
             d : "diez minutos",
-            e :"un par de minutos"
+            e :"un par de minutos",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -401,11 +408,11 @@ const preguntas = [
             e :"nunca"
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ : 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -416,14 +423,14 @@ const preguntas = [
             b : "habitualmente",
             c: "a veces",
             d : "raramente",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta: 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ: 4,
+    respuestaQ :3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -434,14 +441,14 @@ const preguntas = [
             b : "algunas veces por dia",
             c: "algunas veces por semana",
             d : "menos de una vez por semana",
-            e :"nunca"
+            e :"nunca",
     
         },
-    respuesta : 4,
-    respuesta :3,
-    respuesta:2,
-    respuesta:1,
-    respuesta:0
+    respuestaQ :4,
+    respuestaQ:3,
+    respuestaQ:2,
+    respuestaQ:1,
+    respuestaQ:0,
     
     
     } ,
@@ -449,107 +456,53 @@ const preguntas = [
     ];
 
 
-    //SE APLICO METODO PUSH PARA AGREGAR UNA ULTIMA PREGUNTA//
-    preguntas.push ({pregunta:"¿Alguna vez Ud u otra persona han referido algún tipo de preocupación por el desarrollo de su hijo/a?"})
-//POSIBLE LOGICA//
+//FUNCIONES PARA MOSTRAR EL Q CHAT EN LA PAGINA //
 
-function mostrarRespuesta(){
+function mostrarQchat (){
 
-    const preguntasYrespuestas = [];
 
-    preguntas.forEach((preguntaActual,numeroDePregunta)=>{
-    const respuestas = [];
-    for(letraRespuesta in preguntaActual.respuesta){
-        respuestas.push(
-            
+const PreguntasYRespuestas = [];
+
+
+preguntaschat.forEach((PreguntaNueva,NumeroDePreguntas)=>{
+
+    const respuesta = [];
+
+    for(LetraRespuesta1 in PreguntaNueva.respuesta){
+        respuesta.push(
+`<label>
+
+<input type ="radio" name ="${NumeroDePreguntas}" value = "${LetraRespuesta1}"/>
+${LetraRespuesta1} :${PreguntaNueva.respuesta[LetraRespuesta1]}
+
+</label>`
+
 
         );
-    }
-
 
     }
-    
-  )
+    //-----------------------------------------------------//
+    PreguntasYRespuestas.push(
+        `<div class ="testqchat">${PreguntaNueva.pregunta}</div>
+        <div class ="respuesta">${respuesta.join("")}</div>
+        `
+    );
+});
+Qchat.innerHTML=PreguntasYRespuestas.join("") ;
+//----------------------//
 }
+//-------mostrar el qchat------//
+mostrarQchat ()
+
+
+//--------------------FUNCION PARA LAS RESPUESTAS DEL Q CHAT---------------------------//
 
 
 
 
 
-   //METODO DE BUSQUEDA DE PREGUNTAS PRACTICAR FOREACH//
-   preguntas.forEach(preguntas => {console.log(preguntas)
-        
-   });
-
-    //solicitud de datos personales//
-    let nombre =  prompt( " ingresa el nombre de su  hijo")
-    let apellido = prompt(" ingrese el apellido")
-    let edad = parseInt (prompt("ingrese la edad de su hijo en años"))
-
-    alert("el nombre y apellido ingresado es  "+nombre+" "+ apellido+ " y su edad es"+" "+edad +" "+"años")
-
-    // se le indica al usuario a colocar la palabra cuestionario para obtener la lista de preguntas//
-    
-    let cuestionario = prompt ("escriba la palabra cuestionario para solicitar las preguntas")
-    if (cuestionario == "cuestionario"){
-
-       for (const pregunta of preguntas){
-           console.log(pregunta.pregunta)
-           alert (pregunta.pregunta);
-       } 
-    }
-    else if (cuestionario !="cuestionario"){
-        alert("no coloco la palabra correcta")
-    }
-
-    // se le solicita responder algunas de las pregunta y colocar un numero segun la frecuencia (solo de 7 preguntas)//
-
-    let pregunta1 = parseInt (prompt( "1. ¿La/Lo mira su hijo/a cuando Ud. dice su nombre siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
-
-    
-
-    let pregunta2 = parseInt (prompt( "¿Cuán fácil le resulta establecer contacto visual con su hijo/a? siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
 
 
-  let pregunta3 = parseInt (prompt( "¿Cuando su hijo/a está jugando solo/a, ¿alínea objetos? siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
-
- let pregunta4 = parseInt (prompt( "4. ¿Pueden otras personas entender fácilmente a su hijo/a cuando habla? siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
 
 
-     let pregunta5 = parseInt (prompt( "5. ¿Señala su hijo/a para indicar que quiere algo (por ej: un juguete que está fuera de su alcance)? siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
-   
-     let pregunta6 = parseInt (prompt( "¿Señala su hijo/a para compartir un interés con Ud (por ej: señalar hacia algo interesante que vio)? siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
 
-     let pregunta7 = parseInt (prompt( "7. ¿Cuánto tiempo puede un objeto giratorio mantener el interés de su hijo/a (por ej: lavarropas, ventilador, ruedas de autitos)? siempre(0), habitualmente (1),a veces(2),rara vez (3), nunca (4)" ))
-
-     let total = pregunta1+pregunta2+pregunta3+pregunta4+pregunta5+pregunta6+pregunta7
-
-     // EL TEST ORIGINAL TIENE 25 PREGUNTAS Y LOS PUNTOS DE CORTE SON 44 , ES DECIR MAYOR A O MENOR A 44 PUNTOS//
-
-// condicionales para la pre-entrega//
-     if (total <=10){
-         alert (" no esta dentro del espectro")
-     }else if (total >10){
-         alert ( " esta dentro del espectro autista")
-
-     }
-    
- //DUDAS//
- // como puedo hacer para que el usuario al marcar una opcion , esa opcion que tiene un numero como respuesta luego sea sumado y ahi se pueda establacer los condicionales de acuerdo al resultado??
-
- //deberia hacer primero la funcion suma de las respuestas , como accedo a la respuesta que esta dentro de un objeto dentro de otro objeto para hace esa funcion?
-
- // luego tal vez hacer un for each para que busque las respuestas marcadas por el usuario y de acuerdo a esas respuestas establecer los condicionales?
-
- //1) crear una funcion suma de respuestas
- //2) usar foreach para que recorra el array y los objetos y vea las respuestas
- //3) usar esas respuestas y aplicar la funcion suma?
- //4) establecer los condicionales if else if  de acuerdo al total de respuestas
-//5) mostrar el resultado
-
-//el problema es q ue no se como hacerlo...
-
-
-   
-   
-   
