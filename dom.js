@@ -1,4 +1,4 @@
-//DESAFIO DOM INTERACTUANDO CON EL HTML//
+//DESAFIO DOM INTERACTUANDO CON EL HTML ejemplos y usos//
 
 //cambio el texto//
 document.getElementById ("titulo1").innerHTML ="cambio el texto con DOM"
@@ -35,8 +35,6 @@ document.getElementById("titulo1").innerHTML ="cambiamos el titulo"
 //cambio de color//
 
     Document.getElementById("titulo1").className = "titulo-principal2";
-
-
 
 
 

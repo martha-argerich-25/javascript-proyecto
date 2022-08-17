@@ -456,7 +456,7 @@ const preguntaschat = [
     ];
 
 
-//FUNCIONES PARA MOSTRAR EL Q CHAT EN LA PAGINA //
+//------------------FUNCIONES PARA MOSTRAR EL Q CHAT EN LA PAGINA ----------------------//
 
 function mostrarQchat (){
 
@@ -499,7 +499,11 @@ mostrarQchat ()
 
 
 
+function MostrarResultadoQchat(){
 
+    const RespuestasQchat = qchat.querySelectorAll(".respuestaqchat")
+
+}
 
 
 
