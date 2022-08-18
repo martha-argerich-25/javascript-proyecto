@@ -22,7 +22,8 @@ p {
 h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  font-size: small; }
 
 h3 {
   color: #0e098f;
@@ -165,6 +166,26 @@ h1 {
 
 .texto-fenotipo {
   padding-top: 50px; }
+
+.titulo-libros {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: small; }
+
+.producto-container {
+  display: flex;
+  justify-content: space-between; }
+
+#test {
+  display: block; }
+  #test .cuestion {
+    display: block;
+    font-size: medium;
+    font-weight: bold; }
+  #test .respuestas {
+    display: grid;
+    font-size: medium; }
 
 /* mediaqueries*/
 @media screen and (max-width: 320px) {
