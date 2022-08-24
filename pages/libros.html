@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/translated.css">
-    <title>Document</title>
+    <title>libros</title>
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./fenotipoampliado.html">
-                        ¿Que es el fenotipo ampliado?</a>
+                      Fenotipo ampliado</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/qchat.html">QCHAT</a>
@@ -40,7 +40,7 @@
                       <li><a class="dropdown-item" href="test.html">cuestionario</a></li>
                       <li><a class="dropdown-item" href="libros.html">libros</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="pages/contactos.html">Contactos</a></li>
+                      <li><a class="dropdown-item" href="../pages/contactos.html">Contactos</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -67,7 +67,7 @@
             <h2>El autismo explicado a los no autistas</h2>
             <p class="precio">3422$</p>
              <button type="boton" class="btn btn-primary" onclick="agregar('producto1',3422)"class="boton-add">agregar al carrito</button>
-
+             <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
         </div>
         <div class="producto2">
                  <img src="../img/41cPA0XZXCL.jpg" width="160px">
@@ -76,6 +76,7 @@
             <p class="precio">3222$</p>
              
             <button type="boton" class="btn btn-primary" onclick="agregar('producto2',3222) "class="botoncdc">agregar al carrito</button>
+            <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
         </div>
         <div class="producto3">
             <img src="../img/autismo.png"width="160px">
@@ -83,6 +84,7 @@
             <div class="contendio"></div>
             <p class="precio">4222$</p>
             <button type="boton" class="btn btn-primary" onclick="agregar('producto3',4222) "class="botoncdc">agregar al carrito</button>
+            <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
         </div>
         <div class="producto4">
             <img src="../img/81oTUAjfMZL.jpg"width="160px">
@@ -90,13 +92,10 @@
             <div class="contendio"></div>
             <p class="precio">4222$</p>
             <button type="boton" class="btn btn-primary"onclick="agregar('producto3',4222) "class="botoncdc">agregar al carrito</button>
+            <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
         </div>
-
-
          </div>
-
     </div>
-
 </main>
 <footer class="footer">
     <spam>

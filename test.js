@@ -76,7 +76,7 @@ const preguntas =[
           b: " ningun trabajo ",
           c:" rinden mejor en trabajos que requieren de cierto grado de repetición de actividades y son estructurados."
       },
-      respuestaCorrecta:"b",
+      respuestaCorrecta:"c",
   
 
   },
@@ -134,7 +134,22 @@ function mostrarResultado() {
     respuestasCorrectas +
     " preguntas de un total de " +
     preguntas.length;
+
+
+    
+
+
+
+
 }
 //------------------------evento-------------------//
 
 botonRes.addEventListener("click", mostrarResultado);
+
+//USO DE LOCALSTORAGE PRIMERO GUARDAMOS CON SET y uso de stringify para obtener un string
+
+localStorage.setItem("preguntas",JSON.stringify(preguntas))
+
+preguntas = JSON.parse(localStorage.getItem("preguntas"));
+console.log("preguntas")
+

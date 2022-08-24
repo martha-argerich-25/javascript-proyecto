@@ -16,3 +16,11 @@ function agregar (producto,precio){
 function pagar (){
   window.alert(productos.join(",\n"));
 }
+
+//funcion para eliminar el producto//
+
+function sacar(producto,precio){
+console.log(producto,precio);
+total= 0;
+document.getElementById("checkout").innerHTML =`pagar${total}`
+}

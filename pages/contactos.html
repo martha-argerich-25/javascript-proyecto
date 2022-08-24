@@ -27,7 +27,7 @@
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./fenotipoampliado.html">
-                        ¿Que es el fenotipo ampliado?</a>
+                        Fenotipo ampliado</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/qchat.html">QCHAT</a>
@@ -56,27 +56,48 @@
           </nav>
     </header>
     <main>
-        <h1 class="titulo-principal">Formulario de contacto</h1>
-        <h3>Dejanos tus preguntas</h3>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <button type="button" class="btn btn-primary">enviar</button>
-          </div>
+           <form action="" method="get" id="formulario">
+             <div class="form">
+               <h1 class="titulo-principal">registro</h1>
+               <div class="grupo">
+                  <input type="text" id='nombre' name="name" ><span class="barra"></span>
+                <label for="">nombre</label>
+               </div>
+               <div class="grupo">
+                 <input type="email" name="" id ='email'><span class="barra"></span>
+                 <label for="">email</label>
+               </div>
+               <div class="grupo">
+                <input type="password" name="" id ='password' ><span class="barra"></span>
+                <label for="">password</label>
+                <button  type ="submit" onclick='return enviarFormulario()' value="enviar">validar</button>      
+                <div id ="error"></div>
+                <button type="button" id="botoncomprobar">comprobar datos</button>
+                <button type="button" id="botontabla">tabla</button>
+              </div>
+             </div>
+           </form>
+           <table id="tablaregistro">lista de registro
+            <thead>     
+              <th class="thnombre">nombre</th>
+                 <th class="thmail">mail</th>
+               <tr class="tr">
+               </tr>
+              </thead>
+           </table>
+           <tablaa>
 
+
+           </tablaa>
     </main>
     <div class=clearfix></div>
-
     <footer class="footer">
         <spam>
           <p class="texto-footer">Copyright-2022</p>
-         
         </spam>
     </footer>
+    <script src="../mostrarregistro.js"></script>
+    <script src="../formulario.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
