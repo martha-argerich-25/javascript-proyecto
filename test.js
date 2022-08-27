@@ -1,3 +1,11 @@
+
+
+
+//SECCION TEST HTML//
+
+
+
+
 const contenedor = document.getElementById("test");
 const botonRes = document.getElementById ("boton");
 const resultadotest = document.getElementById ("resultado");
@@ -81,7 +89,20 @@ const preguntas =[
 
   },
 ];
-//_------------------------------funcion para mostrar el test//---------------
+
+//USO DE DESESTRUCTURACION para acceder a las propiedades de los objetos//
+
+for (const  desestructuracion of preguntas){
+  const {id,pregunta} =  desestructuracion;
+  console.log (pregunta,id)
+}
+
+// USO DE SPREAD PARA desaparramar LOS OBJETOS DEL ARREGLO y cambiar la forma en la que los presentamos//
+
+console.log (...preguntas)
+
+
+//-----------------------------funcion para mostrar el test//---------------
 function mostrarTest() {
   const preguntasYrespuestas = [];
 
@@ -120,14 +141,29 @@ function mostrarResultado() {
       todasLasRespuestas.querySelector(checkboxRespuestas) || {}
     ).value;
 
-    if (respuestaElegida === preguntaActual.respuestaCorrecta) {
-      respuestasCorrectas++;
 
-      respuestas[numeroDePregunta].style.color = "blue";
-    } else {
-      respuestas[numeroDePregunta].style.color = "red";
-    }
+
+    //codigo orinal del condicional//
+
+  //  if (respuestaElegida === preguntaActual.respuestaCorrecta) {
+     // respuestasCorrectas++;
+
+    //  respuestas[numeroDePregunta].style.color = "blue";
+
+
+   //} else {
+     // respuestas[numeroDePregunta].style.color = "red";
+   // }
+
+//OPERADOR TERNARIO
+(respuestaElegida === preguntaActual.respuestaCorrecta) ?  
+
+respuestasCorrectas++ :respuestas[numeroDePregunta].style.color = "red";
+
+
+
   });
+
 
   resultado.innerHTML =
     "las respuestas correctas fueron " +
@@ -136,20 +172,39 @@ function mostrarResultado() {
     preguntas.length;
 
 
-    
-
-
-
+   
 
 }
 //------------------------evento-------------------//
 
-botonRes.addEventListener("click", mostrarResultado);
+botonRes.addEventListener("click",()=>Swal.fire(
 
-//USO DE LOCALSTORAGE PRIMERO GUARDAMOS CON SET y uso de stringify para obtener un string
+  'Buen trabajo terminaste el formulario!',
+  'You clicked the button!',
+  'success'
+))
+
+botonRes.addEventListener("click",mostrarResultado);
+
+
+
+
+
+
+
+
+
+
+//USO DE LOCALSTORAGE PRIMERO GUARDAMOS CON SET
 
 localStorage.setItem("preguntas",JSON.stringify(preguntas))
 
-preguntas = JSON.parse(localStorage.getItem("preguntas"));
-console.log("preguntas")
+//LUEGO MOSTRAMOS// CON GET
+
+console.log(localStorage.getItem("preguntas"))
+
+
+
+
+
 

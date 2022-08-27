@@ -1,4 +1,9 @@
 
+
+//SECCION LIBROS HTML-CARRITO DE COMPRAS//
+
+const BotonAgregar = document.getElementById("botonagregar")
+const botonCarrito = document.getElementById("checkout")
 //carrito de compras//
 
 //variables//
@@ -24,3 +29,17 @@ console.log(producto,precio);
 total= 0;
 document.getElementById("checkout").innerHTML =`pagar${total}`
 }
+botonCarrito.addEventListener("click",()=>Swal.fire(
+
+  'finalizar compra!',
+  'Muchas gracias por su compra!',
+  'success'))
+
+
+
+
+ 
+
+
+
+

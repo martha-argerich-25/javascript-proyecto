@@ -47,9 +47,30 @@
                     <a class="nav-link disabled"></a>
                   </li>
                 </ul>
-                <iconify-icon icon="emojione-monotone:shopping-cart" width="50"></iconify-icon>
-                <button id="checkout" type="button" class="btn btn-primary" onclick="pagar"()></button>
-               
+
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  ver mi carrito
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <iconify-icon icon="emojione-monotone:shopping-cart" width="50"></iconify-icon>
+        <h5 class="modal-title" id="exampleModalLabel">Libros comprados</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>     
+      <button id="checkout" type="button" class="btn btn-primary" onclick="pagar"()>completar compra</button>
+      <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">vaciar el carrito</button>
+      <div  class="modal-body">   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -66,8 +87,8 @@
             <img src="../img/9788412100044.jpg" width="160px">
             <h2>El autismo explicado a los no autistas</h2>
             <p class="precio">3422$</p>
-             <button type="boton" class="btn btn-primary" onclick="agregar('producto1',3422)"class="boton-add">agregar al carrito</button>
-             <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
+             <button id="botonagregar" type="boton" class="btn btn-primary" onclick="agregar('producto1',3422)"class="boton-add">agregar al carrito</button>
+            
         </div>
         <div class="producto2">
                  <img src="../img/41cPA0XZXCL.jpg" width="160px">
@@ -76,7 +97,7 @@
             <p class="precio">3222$</p>
              
             <button type="boton" class="btn btn-primary" onclick="agregar('producto2',3222) "class="botoncdc">agregar al carrito</button>
-            <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
+         
         </div>
         <div class="producto3">
             <img src="../img/autismo.png"width="160px">
@@ -84,7 +105,7 @@
             <div class="contendio"></div>
             <p class="precio">4222$</p>
             <button type="boton" class="btn btn-primary" onclick="agregar('producto3',4222) "class="botoncdc">agregar al carrito</button>
-            <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
+          
         </div>
         <div class="producto4">
             <img src="../img/81oTUAjfMZL.jpg"width="160px">
@@ -92,7 +113,7 @@
             <div class="contendio"></div>
             <p class="precio">4222$</p>
             <button type="boton" class="btn btn-primary"onclick="agregar('producto3',4222) "class="botoncdc">agregar al carrito</button>
-            <button type="boton" class="btn btn-danger" onclick="sacar('producto1',3422)"class="boton-add">eliminar</button>
+           
         </div>
          </div>
     </div>
@@ -104,6 +125,8 @@
 </footer>
         <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
         <script src="../libros.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script>
         <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
         <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
         <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>

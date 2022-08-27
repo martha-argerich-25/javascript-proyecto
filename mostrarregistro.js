@@ -1,5 +1,5 @@
 
-//FUNCION PARA ALMACENAR Y MOSTRAR DATOS//
+//FUNCION PARA ALMACENAR Y MOSTRAR DATOS SECCION FORMULARIO//
 
 
 let botontabla1 = document.getElementById("botontabla")
@@ -23,7 +23,7 @@ console.log(nombredata,passworddata,emaildata)
 nombredata.push
 emaildata.push
 
-//USO DE LOCALSTORAG//
+//USO DE LOCALSTORAG// creo un string con json
 localStorage.setItem("nombre",JSON.stringify(nombredata))
 localStorage.setItem("email",JSON.stringify(emaildata))
     
@@ -41,7 +41,7 @@ function tabla(){
     let tablaa = document.querySelector("#tablaregistro")
 
     tabla.innerHTML='';
-
+// transformo el string en formato js con el .jsonparse
     let nombretabla = JSON.parse (localStorage.getItem("nombre"))
     let emailtable = JSON.parse(localStorage.getItem("email"))
 
