@@ -187,6 +187,12 @@ h1 {
     display: grid;
     font-size: medium; }
 
+.container {
+  display: flex; }
+
+.formu-cita {
+  display: block; }
+
 /* mediaqueries*/
 @media screen and (max-width: 320px) {
   .box {
