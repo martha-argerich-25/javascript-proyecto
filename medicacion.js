@@ -29,3 +29,44 @@ localStorage.setItem("#cantidad",JSON.stringify(cantidadMedicamento))
 }
 medicacion.addEventListener("submit",ValidarMedicacion)
 
+// USO DE FETCH  PARA SOLICITAR INFORMACION DE MEDICACION  EN ARCHIVO JSONy cargarla//
+
+const botonlista = document.getElementById("solicitarMedicacion")
+//funcion para cargar medicacion del json//
+
+function CargarMedicacion(){
+    fetch("../listamedicacion.json")
+    .then(function(res){
+        return res.json();
+    })
+    .then (function(data){
+        console.log(data)
+
+        let html="";
+        data.forEach (function(data){
+html += ` 
+<H4>Medicacion</H4>
+<h4>${data.medicacion}</h4>
+<H4>Cantidad</H4>
+<p>${data.cantidad}</p>
+<H4>Marca</H4>
+<p>${data.marca}</p>
+`;
+
+        })
+        document.getElementById("cargarmedicacion").innerHTML = html;
+        
+    })
+    .catch (function(error){
+        console.log(error);
+    });
+    
+
+}
+
+
+botonlista.addEventListener("click",CargarMedicacion);
+
+
+
+

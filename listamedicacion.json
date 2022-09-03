@@ -1,0 +1,45 @@
+[{
+    "medicacion":"risperidona",
+    "cantidad":1,
+    "marca": "risperdal"
+  
+},
+{
+
+    "medicacion":"acido valproico",
+    "cantidad":2,
+    "marca": "valcote"
+    
+},
+{
+
+    "medicacion":"haloperidol",
+  "cantidad":1,
+    "marca": "halopidol"
+    
+},
+{
+
+    "medicacion":"lurasidona",
+   "cantidad":2,
+    "marca": "lurap"
+    
+},{
+
+    "medicacion":"oxcarbamacepina",
+   "cantidad":2,
+    "marca": "tegretol"
+    
+},
+{
+
+    "medicacion":"aripiprazol",
+   "cantidad":4,
+    "marca": "irazem"
+    
+}
+
+
+
+
+]
