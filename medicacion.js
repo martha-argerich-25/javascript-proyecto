@@ -29,6 +29,10 @@ localStorage.setItem("#cantidad",JSON.stringify(cantidadMedicamento))
 }
 medicacion.addEventListener("submit",ValidarMedicacion)
 
+
+//----------------------------------------------------------------------------------------------//
+
+
 // USO DE FETCH  PARA SOLICITAR INFORMACION DE MEDICACION  EN ARCHIVO JSONy cargarla//
 
 const botonlista = document.getElementById("solicitarMedicacion")

@@ -204,7 +204,22 @@ localStorage.setItem("preguntas",JSON.stringify(preguntas))
 console.log(localStorage.getItem("preguntas"))
 
 
+// funcion de conteo para hacer el formulario//
+const conteo = function (){
+  setTimeout(function(){
+
+    (Swal.fire({
+      icon: 'error',
+      title: 'ha finalizado tu tiempo ',
+      text: 'prueba nuevamente!',
+      footer: '<a href="">Why do I have this issue?</a>'
+    }))
 
 
 
+  },10000)
 
+   
+}
+
+conteo()

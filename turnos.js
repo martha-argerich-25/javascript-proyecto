@@ -66,4 +66,15 @@ visualizarCitas();
 }
 
 
+    (Swal.fire({
+        icon: '',
+        title: 'Hola bienvenido a nuestro turnero',
+        text: 'solicita tu turno!',
+        footer: '<a href="">Why do I have this issue?</a>'
+      }))
+
+
+
+
+
   boton.addEventListener("click",agregarCita)
