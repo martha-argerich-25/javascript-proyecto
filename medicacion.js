@@ -36,6 +36,7 @@ medicacion.addEventListener("submit",ValidarMedicacion)
 // USO DE FETCH  PARA SOLICITAR INFORMACION DE MEDICACION  EN ARCHIVO JSONy cargarla//
 
 const botonlista = document.getElementById("solicitarMedicacion")
+
 //funcion para cargar medicacion del json//
 
 function CargarMedicacion(){
@@ -61,6 +62,8 @@ html += `
         document.getElementById("cargarmedicacion").innerHTML = html;
         
     })
+
+    // uso de catch por si la promesa es rechazada-captura el error//
     .catch (function(error){
         console.log(error);
     });

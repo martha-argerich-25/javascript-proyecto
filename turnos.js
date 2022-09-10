@@ -48,8 +48,6 @@ const agregarCita =()=>{
     let sintomas =document.getElementById("sintomas").value;
 
 
-
-
 let nuevaCita = {
     nombre,
     apellido,
